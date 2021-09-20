@@ -1,0 +1,11 @@
+{
+    "Id": "MtC.Mod.ChineseParents.LovingTimeController",
+    "DisplayName": "约会时间控制器 - Loving Time Controller",
+    "Author": "Mr.true.China",
+    "Version": "1.0.0",
+    "LoadAfter": [
+        "MtC.Mod.ChineseParents.EventControlLib"
+    ],
+    "AssemblyName": "Loving-Time-Controller.dll",
+    "EntryMethod": "MtC.Mod.ChineseParents.LovingTimeController.Main.Load"
+}
