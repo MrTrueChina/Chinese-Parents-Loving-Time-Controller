@@ -82,6 +82,7 @@
     <Compile Include="GirlPanelButtonControl.cs" />
     <Compile Include="LovingTimeController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransferEventTimeChange.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

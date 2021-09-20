@@ -13,60 +13,35 @@ namespace MtC.Mod.ChineseParents.LovingTimeController
     public class Settings : UnityModManager.ModSettings, IDrawable
     {
         /// <summary>
-        /// 游戏原本逻辑中社交窗口出现的回合数
-        /// </summary>
-        public const int ORIGIN_LOVING_OPEN_ROUNDS = 25;
-        /// <summary>
-        /// 游戏原本逻辑中王胜男转学的回合数
-        /// </summary>
-        public const int ORIGIN_WANG_SHENG_NAN_TRANSFER_ROUNDS = 27;
-        /// <summary>
-        /// 游戏原本逻辑中李若放转学的回合数
-        /// </summary>
-        public const int ORIGIN_LI_RUO_FANG_TRANSFER_ROUNDS = 28;
-        /// <summary>
-        /// 游戏原本逻辑中汤金娜转学的回合数
-        /// </summary>
-        public const int ORIGIN_TANG_JIN_NA_TRANSFER_ROUNDS = 28;
-        /// <summary>
-        /// 游戏原本逻辑中苏芳允转学的回合数
-        /// </summary>
-        public const int ORIGIN_SU_FANG_YUN_TRANSFER_ROUNDS = 29;
-        /// <summary>
-        /// 游戏原本逻辑中牧唯转学的回合数
-        /// </summary>
-        public const int ORIGIN_MU_WEI_TRANSFER_ROUNDS = 29;
-
-        /// <summary>
         /// 社交按钮开启回合数
         /// </summary>
-        [Draw("社交按钮开启回合数 - Loving Button Open Rounds")]
-        public int LovingOpenRounds = ORIGIN_LOVING_OPEN_ROUNDS;
+        [Draw("社交按钮开启回合数（原版是 25） - Loving Button Open Rounds (Vanilla is 25)")]
+        public int LovingOpenRounds = Main.VANILLA_LOVING_OPEN_ROUNDS;
         /// <summary>
         /// 王胜男转学回合数
         /// </summary>
-        [Draw("王胜男转学回合数 - WangShegnNan Transfer Rounds")]
-        public int WangShegnNanTransferRounds = ORIGIN_WANG_SHENG_NAN_TRANSFER_ROUNDS;
+        [Draw("王胜男转学回合数（原版是 27） - WangShegnNan Transfer Rounds (Vanilla is 27)")]
+        public int WangShegnNanTransferRounds = Main.VANILLA_WANG_SHENG_NAN_TRANSFER_ROUNDS;
         /// <summary>
         /// 李若放转学回合数
         /// </summary>
-        [Draw("李若放转学回合数 - LiRuoFang Transfer Rounds")]
-        public int LiRuoFangTransferRounds = ORIGIN_LI_RUO_FANG_TRANSFER_ROUNDS;
+        [Draw("李若放转学回合数（原版是 28） - LiRuoFang Transfer Rounds (Vanilla is 28)")]
+        public int LiRuoFangTransferRounds = Main.VANILLA_LI_RUO_FANG_TRANSFER_ROUNDS;
         /// <summary>
         /// 汤金娜转学回合数
         /// </summary>
-        [Draw("汤金娜转学回合数 - TangJinNa Transfer Rounds")]
-        public int TangJinNaTransferRounds = ORIGIN_TANG_JIN_NA_TRANSFER_ROUNDS;
+        [Draw("汤金娜转学回合数（原版是 28） - TangJinNa Transfer Rounds (Vanilla is 28)")]
+        public int TangJinNaTransferRounds = Main.VANILLA_TANG_JIN_NA_TRANSFER_ROUNDS;
         /// <summary>
         /// 苏芳允转学回合数
         /// </summary>
-        [Draw("苏芳允转学回合数 - SuFangYun Transfer Rounds")]
-        public int SuFangYunTransferRounds = ORIGIN_SU_FANG_YUN_TRANSFER_ROUNDS;
+        [Draw("苏芳允转学回合数（原版是 29） - SuFangYun Transfer Rounds (Vanilla is 29)")]
+        public int SuFangYunTransferRounds = Main.VANILLA_SU_FANG_YUN_TRANSFER_ROUNDS;
         /// <summary>
         /// 牧唯转学回合数
         /// </summary>
-        [Draw("牧唯转学回合数 - MuWei Transfer Rounds")]
-        public int MuWeiTransferRounds = ORIGIN_MU_WEI_TRANSFER_ROUNDS;
+        [Draw("牧唯转学回合数（原版是 29） - MuWei Transfer Rounds (Vanilla is 29)")]
+        public int MuWeiTransferRounds = Main.VANILLA_MU_WEI_TRANSFER_ROUNDS;
 
         public override void Save(UnityModManager.ModEntry modEntry)
         {
@@ -80,6 +55,51 @@ namespace MtC.Mod.ChineseParents.LovingTimeController
 
     public static class Main
     {
+        /// <summary>
+        /// 游戏原本逻辑中社交窗口出现的回合数
+        /// </summary>
+        public const int VANILLA_LOVING_OPEN_ROUNDS = 25;
+        /// <summary>
+        /// 游戏原本逻辑中王胜男转学的回合数
+        /// </summary>
+        public const int VANILLA_WANG_SHENG_NAN_TRANSFER_ROUNDS = 27;
+        /// <summary>
+        /// 游戏原本逻辑中李若放转学的回合数
+        /// </summary>
+        public const int VANILLA_LI_RUO_FANG_TRANSFER_ROUNDS = 28;
+        /// <summary>
+        /// 游戏原本逻辑中汤金娜转学的回合数
+        /// </summary>
+        public const int VANILLA_TANG_JIN_NA_TRANSFER_ROUNDS = 28;
+        /// <summary>
+        /// 游戏原本逻辑中苏芳允转学的回合数
+        /// </summary>
+        public const int VANILLA_SU_FANG_YUN_TRANSFER_ROUNDS = 29;
+        /// <summary>
+        /// 游戏原本逻辑中牧唯转学的回合数
+        /// </summary>
+        public const int VANILLA_MU_WEI_TRANSFER_ROUNDS = 29;
+        /// <summary>
+        /// 王胜男转学事件对话数据 ID
+        /// </summary>
+        public const int WANG_SHENG_NAN_TRANSFER_DATA_ID = 7000001;
+        /// <summary>
+        /// 李若放转学事件对话数据 ID
+        /// </summary>
+        public const int LI_RUO_FANG_TRANSFER_DATA_ID = 7000002;
+        /// <summary>
+        /// 汤金娜转学事件对话数据 ID
+        /// </summary>
+        public const int TANG_JIN_NA_TRANSFER_DATA_ID = 7000003;
+        /// <summary>
+        /// 苏芳允转学事件对话数据 ID
+        /// </summary>
+        public const int SU_FANG_YUN_TRANSFER_DATA_ID = 7000004;
+        /// <summary>
+        /// 牧唯转学事件对话数据 ID
+        /// </summary>
+        public const int MU_WEI_TRANSFER_DATA_ID = 7000005;
+
         /// <summary>
         /// Mod 对象
         /// </summary>
@@ -127,6 +147,16 @@ namespace MtC.Mod.ChineseParents.LovingTimeController
             // 将 Mod Manager 切换的状态保存下来
             enabled = value;
 
+            // 如果是激活 Mod 则修改转校事件，否则取消修改
+            if (enabled)
+            {
+                TransferEventTimeChange.ChangeTransferEvents();
+            }
+            else
+            {
+                TransferEventTimeChange.UnchangeTransferEvents();
+            }
+
             // 返回 true 表示这个 Mod 切换到 Mod Manager 切换的状态，返回 false 表示 Mod 依然保持原来的状态
             return true;
         }
@@ -138,7 +168,12 @@ namespace MtC.Mod.ChineseParents.LovingTimeController
 
         static void OnSaveGUI(UnityModManager.ModEntry modEntry)
         {
+            // 保存设置
             settings.Save(modEntry);
+
+            // 取消对转校事件的修改，并用新的配置再次修改
+            TransferEventTimeChange.UnchangeTransferEvents();
+            TransferEventTimeChange.ChangeTransferEvents();
         }
     }
 }

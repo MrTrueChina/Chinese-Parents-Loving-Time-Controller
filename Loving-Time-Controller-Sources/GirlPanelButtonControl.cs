@@ -42,7 +42,7 @@ namespace MtC.Mod.ChineseParents.LovingTimeController
                 // 获取当前女生设置的转学回合数
                 int transferRound = transferRounds[i - 4];
 
-                // 当前回合大于转学回合则激活按钮，否则销毁按钮
+                // 当前回合大于转学回合则激活按钮，否则禁用按钮
                 if(currentRound >= transferRound)
                 {
                     // 启用背景色块
@@ -54,12 +54,23 @@ namespace MtC.Mod.ChineseParents.LovingTimeController
                     // 记录按钮数 +1
                     buttonNumber++;
                 }
+                else
+                {
+                    // 禁用背景色块的射线接收
+                    ___bgButtons[i].raycastTarget = false;
+                    // 禁用人物图片
+                    ___list[i].gameObject.SetActive(false);
+                }
             }
 
-            // 如果牧唯转学了，则社交面板显示不到牧唯，开启垂直滚动
+            // 如果牧唯转学了，则社交面板显示不到牧唯，开启垂直滚动，否则禁用滚动
             if(currentRound >= Main.settings.MuWeiTransferRounds)
             {
                 ___scroll.vertical = true;
+            }
+            else
+            {
+                ___scroll.vertical = false;
             }
         }
     }
