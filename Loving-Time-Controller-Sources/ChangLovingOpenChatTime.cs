@@ -47,9 +47,15 @@ namespace MtC.Mod.ChineseParents.LovingTimeController
                 return;
             }
 
-            Main.ModEntry.Logger.Log("读取数据方法调用完毕");
+            // 这个方法调用次数过多，先对是否是查询每回合事件进行过滤，否则后续 Log 会污染 Log 文件还可能影响运行速度
+            if (!("week_data".Equals(__state.fileName)))
+            {
+                return;
+            }
 
-            if(Main.VANILLA_LOVING_OPEN_ROUNDS == Main.settings.lovingOpenRounds)
+            Main.ModEntry.Logger.Log("读取每回合事件数据方法调用完毕");
+
+            if (Main.VANILLA_LOVING_OPEN_ROUNDS == Main.settings.lovingOpenRounds)
             {
                 Main.ModEntry.Logger.Log("设置的社交按钮开启时间和原版时间相同，不作处理");
                 return;
