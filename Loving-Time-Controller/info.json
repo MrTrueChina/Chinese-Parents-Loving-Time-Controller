@@ -3,6 +3,9 @@
     "DisplayName": "约会时间控制器 - Loving Time Controller",
     "Author": "Mr.true.China",
     "Version": "1.0.0",
+    "Requirements": [
+        "MtC.Mod.ChineseParents.EventControlLib"
+    ],
     "LoadAfter": [
         "MtC.Mod.ChineseParents.EventControlLib"
     ],
