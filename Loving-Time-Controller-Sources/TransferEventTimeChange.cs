@@ -28,15 +28,15 @@ namespace MtC.Mod.ChineseParents.LovingTimeController
             // 每个女同学的 原有转学回合、设置转学回合、转学事件 ID
             List<int[]> transferRoundParams = new List<int[]>();
             // 王胜男
-            transferRoundParams.Add(new int[] { Main.VANILLA_WANG_SHENG_NAN_TRANSFER_ROUNDS, Main.settings.WangShegnNanTransferRounds, Main.WANG_SHENG_NAN_TRANSFER_DATA_ID });
+            transferRoundParams.Add(new int[] { Main.VANILLA_WANG_SHENG_NAN_TRANSFER_ROUNDS, Main.settings.wangShegnNanTransferRounds, Main.WANG_SHENG_NAN_TRANSFER_DATA_ID });
             // 李若放
-            transferRoundParams.Add(new int[] { Main.VANILLA_LI_RUO_FANG_TRANSFER_ROUNDS, Main.settings.LiRuoFangTransferRounds, Main.LI_RUO_FANG_TRANSFER_DATA_ID });
+            transferRoundParams.Add(new int[] { Main.VANILLA_LI_RUO_FANG_TRANSFER_ROUNDS, Main.settings.liRuoFangTransferRounds, Main.LI_RUO_FANG_TRANSFER_DATA_ID });
             // 汤金娜
-            transferRoundParams.Add(new int[] { Main.VANILLA_TANG_JIN_NA_TRANSFER_ROUNDS, Main.settings.TangJinNaTransferRounds, Main.TANG_JIN_NA_TRANSFER_DATA_ID });
+            transferRoundParams.Add(new int[] { Main.VANILLA_TANG_JIN_NA_TRANSFER_ROUNDS, Main.settings.tangJinNaTransferRounds, Main.TANG_JIN_NA_TRANSFER_DATA_ID });
             // 苏芳允
-            transferRoundParams.Add(new int[] { Main.VANILLA_SU_FANG_YUN_TRANSFER_ROUNDS, Main.settings.SuFangYunTransferRounds, Main.SU_FANG_YUN_TRANSFER_DATA_ID });
+            transferRoundParams.Add(new int[] { Main.VANILLA_SU_FANG_YUN_TRANSFER_ROUNDS, Main.settings.suFangYunTransferRounds, Main.SU_FANG_YUN_TRANSFER_DATA_ID });
             // 牧唯
-            transferRoundParams.Add(new int[] { Main.VANILLA_MU_WEI_TRANSFER_ROUNDS, Main.settings.MuWeiTransferRounds, Main.MU_WEI_TRANSFER_DATA_ID });
+            transferRoundParams.Add(new int[] { Main.VANILLA_MU_WEI_TRANSFER_ROUNDS, Main.settings.muWeiTransferRounds, Main.MU_WEI_TRANSFER_DATA_ID });
 
             // 遍历所有女同学，修改转学事件发出回合数
             transferRoundParams.ForEach(param =>

@@ -30,11 +30,11 @@ namespace MtC.Mod.ChineseParents.LovingTimeController
 
             // 按顺序将需要转学的同学的转学事件放入数组，准备后续操作
             int[] transferRounds = new int[] {
-                Main.settings.WangShegnNanTransferRounds,
-                Main.settings.LiRuoFangTransferRounds,
-                Main.settings.TangJinNaTransferRounds,
-                Main.settings.SuFangYunTransferRounds,
-                Main.settings.MuWeiTransferRounds
+                Main.settings.wangShegnNanTransferRounds,
+                Main.settings.liRuoFangTransferRounds,
+                Main.settings.tangJinNaTransferRounds,
+                Main.settings.suFangYunTransferRounds,
+                Main.settings.muWeiTransferRounds
             };
 
             for(int i = 4; i < 9; i++)
@@ -64,7 +64,7 @@ namespace MtC.Mod.ChineseParents.LovingTimeController
             }
 
             // 如果牧唯转学了，则社交面板显示不到牧唯，开启垂直滚动，否则禁用滚动
-            if(currentRound >= Main.settings.MuWeiTransferRounds)
+            if(currentRound >= Main.settings.muWeiTransferRounds)
             {
                 ___scroll.vertical = true;
             }

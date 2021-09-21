@@ -16,32 +16,39 @@ namespace MtC.Mod.ChineseParents.LovingTimeController
         /// 社交按钮开启回合数
         /// </summary>
         [Draw("社交按钮开启回合数（原版是 25） - Loving Button Open Rounds (Vanilla is 25)")]
-        public int LovingOpenRounds = Main.VANILLA_LOVING_OPEN_ROUNDS;
+        public int lovingOpenRounds = Main.VANILLA_LOVING_OPEN_ROUNDS;
+
+        /// <summary>
+        /// 社交按钮开启对话是否覆盖原有的事件
+        /// </summary>
+        [Draw("如果社交按钮开启的日期有其他对话则覆盖对话 - Overlay Other Chat On Loving Open Chat")]
+        public bool overlayChat = true;
+
         /// <summary>
         /// 王胜男转学回合数
         /// </summary>
         [Draw("王胜男转学回合数（原版是 27） - WangShegnNan Transfer Rounds (Vanilla is 27)")]
-        public int WangShegnNanTransferRounds = Main.VANILLA_WANG_SHENG_NAN_TRANSFER_ROUNDS;
+        public int wangShegnNanTransferRounds = Main.VANILLA_WANG_SHENG_NAN_TRANSFER_ROUNDS;
         /// <summary>
         /// 李若放转学回合数
         /// </summary>
         [Draw("李若放转学回合数（原版是 28） - LiRuoFang Transfer Rounds (Vanilla is 28)")]
-        public int LiRuoFangTransferRounds = Main.VANILLA_LI_RUO_FANG_TRANSFER_ROUNDS;
+        public int liRuoFangTransferRounds = Main.VANILLA_LI_RUO_FANG_TRANSFER_ROUNDS;
         /// <summary>
         /// 汤金娜转学回合数
         /// </summary>
         [Draw("汤金娜转学回合数（原版是 28） - TangJinNa Transfer Rounds (Vanilla is 28)")]
-        public int TangJinNaTransferRounds = Main.VANILLA_TANG_JIN_NA_TRANSFER_ROUNDS;
+        public int tangJinNaTransferRounds = Main.VANILLA_TANG_JIN_NA_TRANSFER_ROUNDS;
         /// <summary>
         /// 苏芳允转学回合数
         /// </summary>
         [Draw("苏芳允转学回合数（原版是 29） - SuFangYun Transfer Rounds (Vanilla is 29)")]
-        public int SuFangYunTransferRounds = Main.VANILLA_SU_FANG_YUN_TRANSFER_ROUNDS;
+        public int suFangYunTransferRounds = Main.VANILLA_SU_FANG_YUN_TRANSFER_ROUNDS;
         /// <summary>
         /// 牧唯转学回合数
         /// </summary>
         [Draw("牧唯转学回合数（原版是 29） - MuWei Transfer Rounds (Vanilla is 29)")]
-        public int MuWeiTransferRounds = Main.VANILLA_MU_WEI_TRANSFER_ROUNDS;
+        public int muWeiTransferRounds = Main.VANILLA_MU_WEI_TRANSFER_ROUNDS;
 
         public override void Save(UnityModManager.ModEntry modEntry)
         {
@@ -59,6 +66,10 @@ namespace MtC.Mod.ChineseParents.LovingTimeController
         /// 游戏原本逻辑中社交窗口出现的回合数
         /// </summary>
         public const int VANILLA_LOVING_OPEN_ROUNDS = 25;
+        /// <summary>
+        /// 游戏原本逻辑中社交窗口出现的对话的 ID
+        /// </summary>
+        public const int VANILLA_LOVING_OPEN_CHAT_ID = 21001;
         /// <summary>
         /// 游戏原本逻辑中王胜男转学的回合数
         /// </summary>

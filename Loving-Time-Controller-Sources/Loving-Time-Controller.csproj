@@ -79,6 +79,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangLovingOpenChatTime.cs" />
     <Compile Include="GirlPanelButtonControl.cs" />
     <Compile Include="LovingButtonControl.cs" />
     <Compile Include="LovingTimeController.cs" />
