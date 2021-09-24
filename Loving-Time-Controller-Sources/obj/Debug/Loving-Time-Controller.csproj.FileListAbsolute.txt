@@ -114,3 +114,6 @@ D:\Projects\Unity-Mod-Manager-Mod\Chinese-Parents\Chinese-Parents-Loving-Time-Co
 D:\Projects\Unity-Mod-Manager-Mod\Chinese-Parents\Chinese-Parents-Loving-Time-Controller\Loving-Time-Controller-Sources\obj\Debug\Loving-Time-Controller.csproj.CopyComplete
 D:\Projects\Unity-Mod-Manager-Mod\Chinese-Parents\Chinese-Parents-Loving-Time-Controller\Loving-Time-Controller-Sources\obj\Debug\Loving-Time-Controller.dll
 D:\Projects\Unity-Mod-Manager-Mod\Chinese-Parents\Chinese-Parents-Loving-Time-Controller\Loving-Time-Controller-Sources\obj\Debug\Loving-Time-Controller.pdb
+D:\Projects\Unity-Mod-Manager-Mod\Chinese-Parents\Chinese-Parents-Loving-Time-Controller\Loving-Time-Controller-Sources\bin\Debug\Loving-Time-Controller.xml
+D:\Projects\Unity-Mod-Manager-Mod\Chinese-Parents\Chinese-Parents-Loving-Time-Controller\Loving-Time-Controller-Sources\bin\Debug\Event-Control-Lib.xml
+D:\Projects\Unity-Mod-Manager-Mod\Chinese-Parents\Chinese-Parents-Loving-Time-Controller\Loving-Time-Controller-Sources\obj\Debug\Loving-Time-Controller.csprojAssemblyReference.cache
