@@ -1,2 +1,2 @@
-# Chinese-Parents-Loving-Time-Controller
- 中国式家长 社交出现时间控制器 Mod
+#  中国式家长 约会时间控制器 Mod
+这个 Mod 添加了一个设置功能，可以设置社交选项出现的时间和各个女同学转学的时间。
